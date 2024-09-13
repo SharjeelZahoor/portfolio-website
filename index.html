@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src ="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-----------Header----------->
+        <div id = "header">
+            <div class="container">
+                <div class="tofix">
+                <nav>
+                    <img src="img/logo3.png" class= "logo">
+                    <ul id ="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+                <div class="header-text">
+                    <p>Aspiring Software Engineer</p>
+                    <h1>Hi, I am <span id = "myname"> Sharjeel Zahoor</span><br> From Pakistan</h1>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-----------About Section----------->
+        <div id = "about">
+            <div class= "container">
+                <h1 class = "sub-title">About Me</h1>
+                <div class = "row">
+                    <div class="about-col-1">
+                        <img src="img/second.png">
+                    </div>
+                    <div class="about-col-2">
+                        
+                        <p>I am a detail-oriented graduate with a solid foundation in Python, SQL, and database management. My expertise includes data structures, algorithms, and object-oriented programming, gained through hands-on projects and coursework. With a focus on developing and optimizing software solutions, I am committed to continuous learning and eager to contribute to innovative projects in a dynamic tech environment.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('activities')">Activities</p>
+                        </div>
+                        <div class ="tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>Technical Skills</span>
+                                    <br>Python, Java, C++, Pandas, Numpy
+                                    <br>HTML, CSS, Bootstrap, JavaScript
+                                    <br>SDLC, Quality Engineering, Testing, Debugging, Unit Testing
+                                    <br>Version Control, Git, GitHub
+                                </li>
+                                <li><span>Soft Skills</span>
+                                    <br>Problem Solving, Analytical Thinking, Creativity 
+                                    <br>Time Management, Self-Motivation, Adaptability
+                                    <br>Communication, Collaboration,Work Ethic
+                                    <br>Ability to Work Independently and with team 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class ="tab-contents" id = "education">
+                            <ul>
+                                <li><span>Bachelor of Computer Science</span><br>Virtual University of Pakistan<br>2020 - 2024</li>
+                                <li><span>Intermediate in Computer Science</span><br>Govt. Degree Collage Choa Saiden Shah<br>2017 - 2018</li> 
+                            </ul>
+                        </div>
+                        <div class ="tab-contents" id = "activities">
+                            <ul>
+                                <li><span>Indoor</span>
+                                    <br>Historic Discussion
+                                    <br>Exploring maps
+                                    <br>Researching 
+                                    <br>Watching podcasts
+                                </li>
+                                <li><span>Outdoor</span>
+                                    <br>Hiking
+                                    <br>Exploring Nature
+                                    <br>Cricket
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+      
+        <!--------------------------projects---------------------------------------------->
+        <div id = "projects">
+            <div class= "container">
+                <h1 class = "sub-title">Projects</h1>
+                <div class = "row">
+                    <div class="card">
+                        <img src="img/fyp1.png">
+                        <div class="card-content">
+                            <h3>Intelligent Alert App<br>(Java, SQLite)</h3>
+                            <p>Developed an Intelligent Alert App to streamline business meeting management processes. The app includes secure login for managers, database storage for departments and meetings, and notification systems. Key features allow managers to schedule, notify, and cancel meetings while gathering feedback from participants. This project showcases my expertise in the Software Development Life Cycle (SDLC), Java, and SQLite for data management.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/portfolio-about1.png">
+                        <div class="card-content">
+                            <h3>My Portfolio<br>(HTML, CSS, JavaScript)</h3>
+                            <p>Built a personal portfolio website from scratch using HTML, CSS, and JavaScript to showcase my skills, projects, and certifications. The website features a responsive design, highlighting my ability to create visually appealing, functional, and mobile-friendly interfaces. This project demonstrates my expertise in front-end development and provides a comprehensive overview of my technical capabilities and achievements.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cafe menu1.png">
+                        <div class="card-content">
+                            <h3>Café Menu Layout<br>(HTML, CSS)</h3>
+                            <p>Designed visually appealing café menu layout using HTML and CSS, demonstrating my web design skills. The project includes a clean, featuring sections for food and beverage items, prices, and descriptions. I focused on creating a responsive design. This project highlights my proficiency in HTML5, CSS, and my ability to create functional, user-friendly, and aesthetically pleasing web interfaces that adapt across various platforms.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    
+
+
+    <!-----------Certificates----------------------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="c-title">Certificates</h1>
+            <div class="gallery-wrap">
+                <i class="fa-solid fa-backward" id="backBtn"></i>
+                <div class="gallery">
+                    <div class="gallery-track">
+                        
+                        <div class="slide">
+                            <img src="img/asp.png" alt="ASP Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/ppf.png" alt="ASP Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/oop1.png" alt="OOP1 Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/wdtp.png" alt="WDTP Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/reip.png" alt="REIP Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/wfip.png" alt="WFIP Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/its.png" alt="ITS Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/wfip.png" alt="PTB Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/ptb.png" alt="PTB Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/sql3.png" alt="SQL3 Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/sql2.png" alt="SQL2 Certificate">
+                        </div>
+                        <div class="slide">
+                            <img src="img/sql1.png" alt="SQL2 Certificate">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <i class="fa-solid fa-forward" id="nextBtn"></i>
+            </div>
+        </div>
+    </div>
+             
+
+
+<!---------------Contact------------------>
+<div id="contact">
+        <div class="container-row">
+            <div class="row-contact">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="subdiv">
+                        <div class="emailn">
+                            <p><i class="fa-solid fa-paper-plane"></i> sharjeel.zahoor786@gmail.com</p>
+                            <p><i class="fa-solid fa-phone-volume"></i> +92 335 5252804</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sharjeelzahoor/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/SharjeelZahoor"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-------------Scripts------------------>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove('active-link');
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add('active-tab' );
+            }
+
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const backBtn = document.getElementById('backBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const galleryTrack = document.querySelector('.gallery-track');
+            const slides = Array.from(document.querySelectorAll('.slide'));
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateGallery();
+                }
+            });
+            
+            backBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateGallery();
+                }
+            });
+            
+            function updateGallery() {
+                const slideWidth = slides[0].clientWidth;
+                galleryTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            }
+            
+    
+        </script>
+
+
+
+    </body>
+</html>
